@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mon profil</title>
 </head>
+
 <body style="background-color: #ffc5d3; font-family: Arial, sans-serif;">
 
-    <from action="profil.html" method="post">
+    <from action="/verif" method="post">
     <h1>Mon Profil ˚ʚ♡ɞ˚</h1>
     <p>page profil !</p>
     <label for="nom">Nom d'utilisateur</label>
@@ -20,7 +21,17 @@
         <br>
     <label for="motdepasse">Mot de passe</label>(max 12 caractères)
     <input type="password" id="motdepasse" name="motdepasse" maxlength="12">
-        </style <style ="color: #ffc2d8"></style>
+      <span id="togglePassword">👁️</span>
+      <script>
+  const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#motdepasse');
+
+  togglePassword.addEventListener('click', function () {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁️' : '🔒';
+  });
+</script>
     <br>
     <br>
     <br>
@@ -36,5 +47,9 @@
     <label for =reset>Reset</label>
     <input type="reset" value="Reset">
     <input type="submit" value="Enregistrer">
+    <div>
+        <br>
+    <button type="button" onclick="window.location.href='index.html'">Retour</button>
+</from>  
 </body>
 </html>
