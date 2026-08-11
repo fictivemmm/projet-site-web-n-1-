@@ -10,8 +10,8 @@
 </head>
 <body style="background-color: #ffc0cb; font-family: Arial, sans-serif;">
     <form action="/verif" method="post">
-    <h1>Mon Profil ˚ʚ♡ɞ˚</h1>
-    <p>connecte toi a ton compte !</p>
+    <h1>inscription à mon Profil ˚ʚ♡ɞ˚</h1>
+    <p>crée ton compte !</p>
     <label for="nom">Nom d'utilisateur</label>
     <input type="text" id="nom" name="nom">
     <div>
@@ -45,22 +45,23 @@
 <div>
         <br>
     <button type="button" onclick="window.location.href='index.html'">Retour</button>
+    <button type="button" onclick="window.location.href='pageprincipale.html'">continuer</button>
     
 </form>
 <script>
     const btnPassword = document.querySelector('#togglePassword');
         const inputPassword = document.querySelector('#motdepasse');
-         togglePassword.addEventListener('click', function () {
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
+         btnPassword.addEventListener('click', function () {
+    const type = inputPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    inputPassword.setAttribute('type', type);
     this.textContent = type === 'password' ? '👁️' : '🔒';
   });
 
- const btnConfirmPassword = document.querySelector('#toggleConfirmPassword');
-  const password = document.querySelector('#confirmer_motdepasse');
-        toggleConfirmPassword.addEventListener('click', function () {
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
+     const btnConfirmPassword = document.querySelector('#toggleConfirmPassword');
+        const inputConfirmPassword = document.querySelector('#confirmer_motdepasse');
+            btnConfirmPassword.addEventListener('click', function () {
+    const type = inputConfirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    inputConfirmPassword.setAttribute('type', type);
     this.textContent = type === 'password' ? '👁️' : '🔒';
   });    
 
