@@ -9,6 +9,31 @@
     <title>inscription</title>
 </head>
 <body style="background-color: #ffc0cb; font-family: Arial, sans-serif;">
+    <form action="/verif" method="post">
+    <h1>Mon Profil ˚ʚ♡ɞ˚</h1>
+    <p>connecte toi a ton compte !</p>
+    <label for="nom">Nom d'utilisateur</label>
+    <input type="text" id="nom" name="nom">
+    <div>
+        <br>
+    <label for="email">Adresse email</label>
+    <input type="email" id="email" name="email">
+    <div>
+        <br>
+    <label for="motdepasse">Mot de passe</label>(max 12 caractères)
+    <input type="password" id="motdepasse" name="motdepasse" maxlength="12">
+      <span id="togglePassword">👁️</span>
+</div>
+    
+      
+  
+    <br>
+        <label for="confirmer_motdepasse">confirmer mot de passe</label>(max 12 caractères)
+        <input type="password" id="confirmer_motdepasse" name="confirmer_motdepasse" maxlength="12">
+      <span id="toggleConfirmPassword">👁️</span>
+<br>
+<div>
+        <br>
     <label for = madame>Madame</label>
     <input type="radio" id="madame" name="genre" value="madame">
     <label for = monsieur>Monsieur</label>
@@ -20,6 +45,33 @@
 <div>
         <br>
     <button type="button" onclick="window.location.href='index.html'">Retour</button>
+    
+</form>
+<script>
+    const btnPassword = document.querySelector('#togglePassword');
+        const inputPassword = document.querySelector('#motdepasse');
+         togglePassword.addEventListener('click', function () {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁️' : '🔒';
+  });
+
+ const btnConfirmPassword = document.querySelector('#toggleConfirmPassword');
+  const password = document.querySelector('#confirmer_motdepasse');
+        toggleConfirmPassword.addEventListener('click', function () {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁️' : '🔒';
+  });    
+
+
+
+</script>
+    <br>
+    <br>
+    <br>
+    <br>
+
     
 </body>
 </html>
