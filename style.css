@@ -1,6 +1,10 @@
 body {
-    background-color: #ffc0cb;
-    font-family: Arial, sans-serif;
-}
+    background:linear-gradient(to bottom, #053b82,#ff5959);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, #ffffff;
 
+}
+    
 
