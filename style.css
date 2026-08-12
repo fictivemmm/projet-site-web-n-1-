@@ -17,3 +17,7 @@ body {
 
 
 }
+@font-face {
+    font-family: 'PressStart';
+    src: url('PressStart2P-Regular.ttf');
+}
