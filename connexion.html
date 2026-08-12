@@ -11,7 +11,7 @@
 
 <body style="background-color: #ffc0cb; font-family: Arial, sans-serif;">
 
-    <from action="/verif" method="post">
+    <form action="/verif" method="post">
     <h1> connexion à mon Profil ˚ʚ♡ɞ˚</h1>
     <p>connecte-toi à ton compte !</p>
     <label for="nom">Nom d'utilisateur</label>
@@ -20,11 +20,12 @@
         <br>
     <label for="email">Adresse email</label>
     <input type="email" id="email" name="email">
-    <div>
+    </div>
         <br>
     <label for="motdepasse">Mot de passe</label>(max 12 caractères)
     <input type="password" id="motdepasse" name="motdepasse" maxlength="12">
       <span id="togglePassword">👁️</span>
+      </div>
       <script>
   const togglePassword = document.querySelector('#togglePassword');
   const password = document.querySelector('#motdepasse');
@@ -42,10 +43,12 @@
     
     <div>
         <br>
-    <label for =reset></label>
-    <input type="reset" value="Reset">
+   
     <button type="button" onclick="window.location.href='index.html'">Retour</button>
+     <label for =reset></label>
+    <input type="reset" value="Reset">
      <button type="button" onclick="window.location.href='pageprincipale.html'">connexion</button>
-</from>  
+     </div>
+</form>  
 </body>
 </html>
