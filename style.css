@@ -22,29 +22,11 @@ body {
     font-family: 'PressStart';
     src: url('PressStart2P-Regular.ttf');
 }
-.startButton {
+.startButton{
     background-color: #ac2525;
     color: #f1ff59;
     display: block;
     position: absolute;
-    top: 340px;
-    left: 170px;
-    width: 350px;
-    height: 50px;
-    font-family: 'PressStart';
-    text-align: center;
-    border: 40px;
-    border-radius: 30px;
-    font-size: 16px;
-    padding: 10px 20px;
-    cursor: pointer;
-    box-shadow: 2px 4px 6px #58363e;;
-}              
-.buttonstyle {
-    background-color: #ac2525;
-    color: #f1ff59;
-    display: block;
-    margin: 20px auto;
     width: 350px;
     height: 50px;
     font-family: 'PressStart';
@@ -55,4 +37,51 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     box-shadow: 2px 4px 6px #58363e;
-}  
+    
+}    
+.connexionButton{
+    background-color: #ac2525;
+    color: #f1ff59;
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    font-family: 'PressStart';
+    text-align: center;
+    border: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px #58363e;
+    
+}    
+.incriptionButton {
+    background-color: #ac2525;
+    color: #f1ff59;
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    font-family: 'PressStart';
+    text-align: center;
+    border: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px #58363e;
+    
+}    
+
+
+.site-title {
+    text-align: center;
+    margin: 0px;
+
+
+
+    
+    
+}    
+
