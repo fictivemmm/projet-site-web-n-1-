@@ -7,18 +7,6 @@ body {
     color: #ffffff;
 
 }
-.search-button {
-    background-color: #00000036;
-    color: white;
-    border: none;
-    padding: 10px 110px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 30px;
-    text-align: left 60px;
-
-
-}
 @font-face {
     font-family: 'PressStart';
     src: url('PressStart2P-Regular.ttf');
@@ -86,26 +74,32 @@ body {
 }    
 .box1 {
     position: relative;
-    width:70px ;
-    height:50px;
+    width:100px ;
+    height:150px;
     border-radius: 5px;
     font-size: 20px;
     text-align: center;
-    background-color: #58363e;
-    float: clear,   
+    background-color: #58363e;   
 }    
-.box2 {
+.boitedejeu{
     position:absolute;
-    width: 10px;
-    height: 20px;
+    width: 70px;
+    height: 30px;
 
 
 }
 .search-button{
     position:absolute;
-    top: 0px;
+    top: 30px;
     margin-left: 400px;
-    text-align: right 49px;
-    width: 60px;
+    color:#ffffff;
+    text-align: left;
+    width: 300px;
+    height: 30px;
+    background-color: #ffffff7a;
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+    
     
 }
