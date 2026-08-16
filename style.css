@@ -76,6 +76,8 @@ body {
     position: relative; 
     display: flex;
     gap: 15px;
+    top:-220px;
+    left:240px;
     width:900px ;
     height:200px;
     border-radius: 5px;
@@ -111,6 +113,8 @@ body {
     position: relative; 
     display: flex;
     gap: 15px;
+    top: -220px;
+    left:240px;
     width:900px ;
     height:200px;
     border-radius: 5px;
@@ -132,9 +136,11 @@ a:hover {
         color: #ffffff;
          display:flex;
          align-items: center;
-        justify-content: space-between;
-        padding: 20px 50px;
-        background-color: rgba(0, 0, 0, 0.2); 
+        margin: 0px;
+        background-color: rgba(0, 0, 0, 0.2);
+        width:200px;
+        height:50px;
+        gap: 10px; 
 
 
 }
@@ -143,6 +149,7 @@ a:hover {
     flex-direction: column; 
     gap: 30px;
     min-width: 200px;
+    margin:0px;
 }
 .profil{
      float:right; 
@@ -160,4 +167,13 @@ a:hover {
     background-color: #58363e88;
     z-index: -1;
     
+}
+.boitedejeu{
+    height:170px;
+    width: 150px;
+    margin:10px;
+    border-radius: 0px;
+}
+.grand-conteneur{
+    float:top;
 }
