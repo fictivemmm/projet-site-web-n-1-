@@ -78,7 +78,7 @@ body {
     gap: 15px;
     top:-220px;
     left:240px;
-    width:900px ;
+    width:840px ;
     height:200px;
     border-radius: 5px;
     font-size: 20px;
@@ -93,6 +93,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .search-button{
     position:absolute;
@@ -115,7 +116,7 @@ body {
     gap: 15px;
     top: -220px;
     left:240px;
-    width:900px ;
+    width:840px ;
     height:200px;
     border-radius: 5px;
     font-size: 20px;
@@ -166,14 +167,42 @@ a:hover {
     font-size: 20px;
     background-color: #58363e88;
     z-index: -1;
+    transition: transform 5s ease-in-out, box-shadow 5s ease-in-out;
+    transform-origin: center;
+    gap: 100px;
+}
     
+
+.boitedejeu:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
 }
-.boitedejeu{
-    height:170px;
-    width: 150px;
-    margin:10px;
-    border-radius: 0px;
-}
+    
+
+ @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+                border-radius: 0px;
+            }
+            100% {
+                transform: scale(1.3); 
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                border-radius: 0px; 
+            }
+        }
+
 .grand-conteneur{
     float:top;
+}
+.navigation {
+    position: relative;
+    width:200px;
+    height:70px;
+    background: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
