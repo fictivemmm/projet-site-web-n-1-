@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="300;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="profil, utilisateur, informations">
+    <meta name="description" content="Page de profil de l'utilisateur.">
+    <meta name="author" content="Selvrone">
+    <link rel="stylesheet" href="style.css">
+    <title>mon profil</title>
+</head>
+
+<body>
+
+    <form action="/verif" method="post">
+    <h1 style="color: white;"> connexion à mon Profil ˚ʚ♡ɞ˚</h1>
+    <p style="color: white;">connecte-toi à ton compte !</p>
+    <label for="nom" style="color: white;">Nom d'utilisateur</label>
+    <input type="text" id="nom" name="nom">
+    <div>
+        <br>
+    <label for="email" style="color: white;">Adresse email</label>
+    <input type="email" id="email" name="email">
+    </div>
+        <br>
+    <label for="motdepasse" style="color: white;">Mot de passe (max 12 caractères)</label>
+    <input type="password" id="motdepasse" name="motdepasse" maxlength="12">
+      <span id="togglePassword">👁️</span>
+      </div>
+      <script>
+  const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#motdepasse');
+
+  togglePassword.addEventListener('click', function () {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁️' : '🔒';
+  });
+</script>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div>
+        <br>
+   
+    <button type="button" onclick="window.location.href='index.html'" class="btn">Retour</button>
+     <label for =reset></label>
+    <input type="reset" value="Reset">
+     <button type="button" onclick="window.location.href='pageprincipale.html'" class="btn">connexion</button>
+     </div>
+</form>  
+</body>
+</html>

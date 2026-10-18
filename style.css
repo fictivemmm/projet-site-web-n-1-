@@ -1,0 +1,242 @@
+body {
+    background:linear-gradient(to bottom, #053b82,#ff5959);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'PressStart', sans-serif;
+    color: #ffffff;
+
+}
+@font-face {
+    font-family: 'PressStart';
+    src: url('PressStart2P-Regular.ttf');
+}
+.startButton{
+    background-color: #fa003f;
+    color: #ffffff;
+    display: block;
+    width: 350px;
+    height: 50px;
+    font-family: 'PressStart';
+    text-align: center;
+    border: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px #58363e;
+    margin-left: 450px ;
+    
+}    
+.connexionButton{
+    background-color: #1ab5d1;
+    color: #ffffff;
+    display: block;
+    width: 350px;
+    height: 50px;
+    font-family: 'PressStart';
+    text-align: center;
+    border: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px #58363e;
+    margin-left: 390px ;
+}    
+.inscriptionButton {
+    background-color: #74c476;
+    color: #ffffff;
+    display: block;
+    width: 350px;
+    height: 50px;
+    font-family: 'PressStart';
+    text-align: center;
+    border: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px #58363e;
+    margin-left: 450px;
+    
+}    
+
+
+.site-title {
+    text-align: center;
+    margin: 0px;
+
+
+
+    
+    
+}    
+.box1 {
+    position: relative; 
+    display: flex;
+    gap: 15px;
+    top:-220px;
+    left:240px;
+    width:840px ;
+    height:200px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #58363e;   
+}    
+.boitedejeu{
+    width: 150px;
+    height: 200px;
+    background-color: #333; 
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-button{
+    position:absolute;
+    top: 30px;
+    margin-left: 400px;
+    color:#ffffff;
+    text-align: left;
+    width: 300px;
+    height: 30px;
+    background-color: #00000036;
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+    
+    
+}
+.box2 {
+    position: relative; 
+    display: flex;
+    gap: 15px;
+    top: -220px;
+    left:240px;
+    width:500px ;
+    height:150px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #58363e;     
+}    
+.boitedejeu2{
+    width: 400px;
+    height: 135px;
+    background-color: #333; 
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+     
+}
+.boitedejeu2:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+    
+
+ @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+                border-radius: 0px;
+            }
+            100% {
+                transform: scale(1.3); 
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                border-radius: 0px; 
+            }
+        }
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+a:hover { 
+    color: #e473c6;
+
+
+
+}
+.class-haut-de-page-principale{
+        color: #ffffff;
+         display:flex;
+         align-items: center;
+        margin: 0px;
+        background-color: rgba(0, 0, 0, 0.2);
+        width:200px;
+        height:50px;
+        gap: 10px; 
+
+
+}
+.menu-gauche {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    min-width: 200px;
+    margin:0px;
+}
+.profil{
+     float:right; 
+     margin-top: -20px;
+
+}
+.boite-de-droite{
+    position: absolute; 
+    display: flex;
+    margin: 0px;
+    top: 0px;
+    width:200px ;
+    height:900px;
+    border-radius: 0px;
+    font-size: 20px;
+    background-color: #58363e88;
+    z-index: -1;
+    transition: transform 30s ease-in-out, box-shadow 30s ease-in-out;
+    transform-origin: center;
+    gap: 100px;
+}
+    
+
+.boitedejeu:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+    
+
+ @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+                border-radius: 0px;
+            }
+            100% {
+                transform: scale(1.3); 
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                border-radius: 0px; 
+            }
+        }
+
+.grand-conteneur{
+    float:top;
+}
+.navigation {
+    position: relative;
+    width:200px;
+    height:70px;
+    background: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+.bnt{
+    color:#9b0000
+
+}

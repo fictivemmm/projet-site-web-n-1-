@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300;">
+    <meta name="keywords" content="inscription, utilisateur, informations">  
+    <meta name="description" content="Page d'inscription de l'utilisateur.">
+    <meta name="author" content="Selvrone">
+    <link rel="stylesheet" href="style.css">
+    <title>inscription</title>
+</head>
+<body>
+    <form action="/verif" method="post">
+    <h1 style="color: white;">inscription à mon Profil ˚ʚ♡ɞ˚</h1>
+    <p style="color: white;">crée ton compte !</p>
+    <label for="nom ;" style="color: white;">Nom d'utilisateur</label>
+    <input type="text" id="nom" name="nom">
+    <div>
+        <br>
+    <label for="email" style="color: white;">Adresse email</label>
+    <input type="email" id="email" name="email">
+    <div>
+        <br>
+    <label for="motdepasse" style="color: white;">Mot de passe (max 12 caractères)</label>
+    <input type="password" id="motdepasse" name="motdepasse" maxlength="12">
+      <span id="togglePassword">👁️</span>
+</div>
+    
+      
+  
+    <br>
+        <label for="confirmer_motdepasse" style="color: white;">confirmer mot de passe (max 12 caractères)</label>
+        <input type="password" id="confirmer_motdepasse" name="confirmer_motdepasse" maxlength="12">
+      <span id="toggleConfirmPassword">👁️</span>
+<br>
+<div>
+        <br>
+    <label for = madame style="color: white;">Madame</label>
+    <input type="radio" id="madame" name="genre" value="madame">
+    <label for = monsieur style="color: white;">Monsieur</label>
+    <input type="radio" id="monsieur" name="genre" value="monsieur">
+    <label for = autre style="color: white;">Autre</label>
+    <input type="radio" id="autre" name="genre" value="autre">
+    <div>
+        <br>
+<div>
+        <br>
+    <button type="button" onclick="window.location.href='index.html'">Retour</button>
+     <label for = reset style="color: white;"></label>
+    <input type="reset" value="Reset">
+    <button type="button" onclick="window.location.href='pageprincipale.html'">continuer</button>
+    
+</form>
+<script>
+    const btnPassword = document.querySelector('#togglePassword');
+        const inputPassword = document.querySelector('#motdepasse');
+         btnPassword.addEventListener('click', function () {
+    const type = inputPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    inputPassword.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁️' : '🔒';
+  });
+
+     const btnConfirmPassword = document.querySelector('#toggleConfirmPassword');
+        const inputConfirmPassword = document.querySelector('#confirmer_motdepasse');
+            btnConfirmPassword.addEventListener('click', function () {
+    const type = inputConfirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    inputConfirmPassword.setAttribute('type', type);
+    this.textContent = type === 'password' ? '👁️' : '🔒';
+  });    
+
+
+
+</script>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+</body>
+</html>

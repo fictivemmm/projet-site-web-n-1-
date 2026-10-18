@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300;">
+    <meta name="author" content="Selvrone">
+    <link rel="stylesheet" href="style.css">
+    <title>pageprincipale</title>
+</head>
+<body>
+<div>  
+    <h5><b>Mon Site Web</b></h5>
+    <button onclick="search()" id="search-button" class="search-button">Rechercher</button>
+<script>
+    function search() {
+        var query = prompt("Entrez votre recherche :");
+        if (query) {
+            window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query);
+        }
+    }
+</script>
+    <br>
+    <br>
+    <div class="class-haut-de-page-principale" >
+            <div><a href="index.html">Accueil</a></div>
+    </div>
+    
+
+<div class="grand-conteneur">  
+    <div>
+        <div><h5>activités recentes</h5></div>
+    </div>        
+        <div class="menu-droite">
+            <a href="jeux.html"><h5>jeux</h5></a>
+            <a href="musique.html"><h5>Musique</h5></a>
+            <a href="amis.html"><h5>Amis</h5></a>
+            <a href="biblotèque.html"><h5>Bibliothèque</h5></a>
+            <a href="paramètres.html">paramètres</a>
+               
+            <div class="boite-de-droite"></div>
+        </div>
+
+    </div>
+<div>
+     <ul>
+          <li><a href = "profil.html"class="profil">profil</a></li>
+    </ul>
+</div>
+
+    </div>
+        <div class="menu-gauche">
+            <div class="box1">
+                <div class="boitedejeu">jeu1</div>
+                <div class="boitedejeu">jeu2</div>
+                <div class="boitedejeu">jeu3</div>
+                <div class="boitedejeu">jeu4</div>
+                <div class="boitedejeu">jeu5</div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="box2">
+        <div class="boitedejeu2">jeu6</div>
+        <div class="boitedejeu2">jeu7</div>
+        <div class="boitedejeu2">jeu8</div>
+        <div class="boitedejeu2">jeu9</div>
+        <div class="boitedejeu2">jeu10</div>
+
+    </div>
+</div>
+</body>
+</html>
