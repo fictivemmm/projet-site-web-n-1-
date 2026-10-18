@@ -128,7 +128,7 @@ body {
     background-color: #333; 
     color: white;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
      
 }
@@ -151,6 +151,18 @@ body {
             }
         }
 
+.box3{
+    position: relative; 
+    display: flex;
+    gap: 15px;
+    top: -370px;
+    right:-790px;
+    width:500px ;
+    height:150px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #58363e;
+}
 a {
     text-decoration: none;
     color: #ffffff;
