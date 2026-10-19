@@ -7,3 +7,4 @@ notation de film
 notation de jeu jouer par l'utilisateur 
 # créer une esthétique pixel art si possible 
 # je vais me jetter d'un balcon 
+# les API...

@@ -150,7 +150,40 @@ body {
                 border-radius: 0px; 
             }
         }
+.boite-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
 
+
+.shape1,
+.shape2 {
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 4px;
+  vector-effect: non-scaling-stroke; 
+  stroke-dasharray: 100;
+  transition: stroke-dashoffset 1.2s ease-in-out;
+}
+
+.shape1 {
+  stroke-dashoffset: 100;
+}
+
+.shape2 {
+  stroke-dashoffset: -100;
+}
+
+
+.boitedejeu2:hover .shape1,
+.boitedejeu2:hover .shape2 {
+  stroke-dashoffset: 0;
+}
 .box3{
     position: relative; 
     display: flex;
@@ -219,6 +252,7 @@ a:hover {
     transform: scale(1.15);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     z-index: 10;
+
 }
     
 
@@ -234,9 +268,14 @@ a:hover {
             }
         }
 
+.card::after{
+    content: "";
+    position: absolute;
+}
 .grand-conteneur{
     float:top;
 }
+
 .navigation {
     position: relative;
     width:200px;
@@ -251,4 +290,9 @@ a:hover {
 .bnt{
     color:#9b0000
 
+}
+.startButton:hover{
+    background-color: #ff5959;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
 }
